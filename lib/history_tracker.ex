@@ -1,4 +1,4 @@
-defmodule Ollama.HistoryTracker do
+defmodule SimpleChat.HistoryTracker do
   use GenServer
 
   # Starting the GenServer

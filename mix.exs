@@ -1,9 +1,9 @@
-defmodule Ollama.MixProject do
+defmodule SimpleChat.MixProject do
   use Mix.Project
 
   def project do
     [
-      app: :ollama,
+      app: :simplechat,
       version: "0.1.0",
       elixir: "~> 1.15",
       start_permanent: Mix.env() == :prod,

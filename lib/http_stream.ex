@@ -1,10 +1,11 @@
-defmodule Ollama.HttpStream do
-  alias Ollama.HistoryTracker
+defmodule SimpleChat.HttpStream do
+  alias SimpleChat.HistoryTracker
 
   @model "wizard-vicuna-uncensored"
   # @model "mistral"
   # @model "llama2-uncensored"
 
+  # url for locally running Ollama
   @url "http://localhost:11434/api/chat"
 
   def post(prompt) do

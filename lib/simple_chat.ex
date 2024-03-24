@@ -1,7 +1,7 @@
-defmodule Ollama do
+defmodule SimpleChat do
   require HTTPoison
-  alias Ollama.HttpStream
-  alias Ollama.HistoryTracker
+  alias SimpleChat.HttpStream
+  alias SimpleChat.HistoryTracker
 
   @timeout 5000
 
@@ -20,7 +20,7 @@ defmodule Ollama do
         IO.puts("Exiting...")
         IO.puts("Chat History:")
         HistoryTracker.get_history() |> IO.inspect()
-        GenServer.stop(Ollama.HistoryTracker, :normal, @timeout)
+        GenServer.stop(SimpleChat.HistoryTracker, :normal, @timeout)
         :ok
 
       _input ->
