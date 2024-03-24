@@ -2,7 +2,7 @@
 
 Elixir Simple Chat is a console application that can be used for chatting with various open source LLMs available via [Ollama](https://ollama.com/).
 
-## Installation
+## How to Use
 
 ```elixir
 iex -S mix
